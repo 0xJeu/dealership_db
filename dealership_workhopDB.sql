@@ -21,6 +21,8 @@ CREATE TABLE vehicles (
 	PRIMARY KEY (VIN)
 );
 
+
+
 CREATE TABLE inventory(
 	dealership_id INT,
     VIN INT
@@ -74,11 +76,11 @@ INSERT INTO vehicles (VIN, `Year`, Make, Model, VehicleType, Color, Odometer, Pr
 (5678901, 2022, 'Nissan', 'Rogue', 'SUV', 'White', 18000, 26000.25);
 
 INSERT INTO inventory (dealership_id, VIN) VALUES
-(101, 1234567),
-(101, 2345678),
-(102, 3456789),
-(103, 4567890),
-(103, 5678901);
+(1, 1234567),
+(1, 2345678),
+(2, 3456789),
+(3, 4567890),
+(5, 5678901);
 
 INSERT INTO sales_contracts (date, VIN, CustomerName, Email, VehicleSold, TotalPrice, MonthlyPayment, SalesTaxAmount, RecordingFee, ProcessingFee, WantToFinance) VALUES
 ('2024-11-22', 1234567, 'John Doe', 'john.doe@email.com', TRUE, 27000.00, 450.00, 1687.50, 100, 200, TRUE),
